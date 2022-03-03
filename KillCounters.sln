@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.0.32112.339
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "KillCounters", "KillCounters.csproj", "{F0D6A9AC-07B4-4418-A638-9C09DCBD4673}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|x64 = Debug|x64
+		Release|x64 = Release|x64
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{F0D6A9AC-07B4-4418-A638-9C09DCBD4673}.Debug|x64.ActiveCfg = Debug|x64
+		{F0D6A9AC-07B4-4418-A638-9C09DCBD4673}.Debug|x64.Build.0 = Debug|x64
+		{F0D6A9AC-07B4-4418-A638-9C09DCBD4673}.Release|x64.ActiveCfg = Release|x64
+		{F0D6A9AC-07B4-4418-A638-9C09DCBD4673}.Release|x64.Build.0 = Release|x64
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {903B8457-A09A-4299-9E8D-EFA3F31F9389}
+	EndGlobalSection
+EndGlobal
