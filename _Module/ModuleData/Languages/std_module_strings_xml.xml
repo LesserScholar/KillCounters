@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<base xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xmlns:xsd="http://www.w3.org/2001/XMLSchema" type="string">
+  <tags>
+    <tag language="English" />
+  </tags>
+  <strings>
+    <string id="ltrSkEbRPv4" text="Kills" />
+    <string id="6nVL5daR87t" text="Regular Troops:" />
+    <string id="5A34EzKTyLT" text="Heroes" />
+    <string id="0RhanD9YqlX" text="Bandits" />
+    <string id="Z4RgDFHmZUn" text="Mercenaries" />
+  </strings>
+</base>

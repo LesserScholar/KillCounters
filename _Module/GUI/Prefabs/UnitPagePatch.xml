@@ -1,0 +1,22 @@
+<DummyRoot>
+    <ListPanel Id="KillsContainer" HeightSizePolicy ="CoverChildren" WidthSizePolicy="CoverChildren" StackLayout.LayoutMethod = "VerticalBottomToTop" DoNotAcceptEvents="true" VerticalAlignment="Bottom" MarginBottom="40" MarginLeft="15">
+        <Children>
+            <TextWidget WidthSizePolicy="CoverChildren" HeightSizePolicy="CoverChildren" Brush="Encyclopedia.SubPage.Header.Text" Text="@KillsText" MarginLeft="10"/>
+
+            <ListPanel Id="KillItems" DataSource="{Kills}" HeightSizePolicy ="CoverChildren" WidthSizePolicy="StretchToParent" StackLayout.LayoutMethod = "VerticalBottomToTop" DoNotAcceptEvents="true" MarginLeft="10">
+                <ItemTemplate>
+
+                    <ListPanel HeightSizePolicy ="CoverChildren" WidthSizePolicy="StretchToParent" MarginLeft="15" MarginTop="3">
+                        <Children>
+
+                            <RichTextWidget HeightSizePolicy ="CoverChildren" WidthSizePolicy="CoverChildren" VerticalAlignment="Center" Brush="Encyclopedia.Stat.DefinitionText" Text="@Definition" MarginRight="5"/>
+                            <RichTextWidget HeightSizePolicy ="CoverChildren" WidthSizePolicy="CoverChildren" VerticalAlignment="Center" Brush="Encyclopedia.Stat.ValueText" Text="@Value" PositionYOffset="2" />
+
+                        </Children>
+                    </ListPanel>
+
+                </ItemTemplate>
+            </ListPanel>
+        </Children>
+    </ListPanel>
+</DummyRoot>
