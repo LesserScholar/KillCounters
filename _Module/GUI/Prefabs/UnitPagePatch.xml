@@ -8,10 +8,8 @@
 
                     <ListPanel HeightSizePolicy ="CoverChildren" WidthSizePolicy="StretchToParent" MarginLeft="15" MarginTop="3">
                         <Children>
-
-                            <RichTextWidget HeightSizePolicy ="CoverChildren" WidthSizePolicy="CoverChildren" VerticalAlignment="Center" Brush="Encyclopedia.Stat.DefinitionText" Text="@Definition" MarginRight="5"/>
-                            <RichTextWidget HeightSizePolicy ="CoverChildren" WidthSizePolicy="CoverChildren" VerticalAlignment="Center" Brush="Encyclopedia.Stat.ValueText" Text="@Value" PositionYOffset="2" />
-
+                            <RichTextWidget HeightSizePolicy ="CoverChildren" WidthSizePolicy="CoverChildren" VerticalAlignment="Center" Brush.FontSize="24" Text="@Definition" MarginRight="5"/>
+                            <RichTextWidget HeightSizePolicy ="CoverChildren" WidthSizePolicy="CoverChildren" VerticalAlignment="Center" Brush.FontSize="20" Text="@Value" PositionYOffset="2" />
                         </Children>
                     </ListPanel>
 
