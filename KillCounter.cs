@@ -58,7 +58,7 @@ namespace KillCounters
             foreach (var c in counters)
             {
                 CharacterObject characterObject = MBObjectManager.Instance.GetObject<CharacterObject>(c.Key);
-                if (characterObject.Occupation == Occupation.Bandit)
+                if (characterObject != null && characterObject.Occupation == Occupation.Bandit)
                 {
                     result += c.Value;
                 }
@@ -71,7 +71,7 @@ namespace KillCounters
             foreach (var c in counters)
             {
                 CharacterObject characterObject = MBObjectManager.Instance.GetObject<CharacterObject>(c.Key);
-                if (characterObject.Occupation == Occupation.Mercenary)
+                if (characterObject != null && characterObject.Occupation == Occupation.Mercenary)
                 {
                     result += c.Value;
                 }
@@ -84,7 +84,7 @@ namespace KillCounters
             foreach (var c in counters)
             {
                 CharacterObject characterObject = MBObjectManager.Instance.GetObject<CharacterObject>(c.Key);
-                if (characterObject.IsHero)
+                if (characterObject != null && characterObject.IsHero)
                 {
                     result += c.Value;
                 }
@@ -97,7 +97,8 @@ namespace KillCounters
             foreach (var c in counters)
             {
                 CharacterObject characterObject = MBObjectManager.Instance.GetObject<CharacterObject>(c.Key);
-                if (!characterObject.IsHero && characterObject.Occupation != Occupation.Mercenary && characterObject.Occupation != Occupation.Bandit)
+                if (characterObject == null || !characterObject.IsHero &&
+                    characterObject.Occupation != Occupation.Mercenary && characterObject.Occupation != Occupation.Bandit)
                 {
                     result += c.Value;
                 }
