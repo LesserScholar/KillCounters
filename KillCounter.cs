@@ -127,6 +127,7 @@ namespace KillCounters
 
         public void AddKill(BasicCharacterObject strikerTroop, BasicCharacterObject attackedTroop)
         {
+            if (strikerTroop == null || attackedTroop == null) return;
             var id = strikerTroop.StringId;
             if (!_counters.ContainsKey(id))
             {
