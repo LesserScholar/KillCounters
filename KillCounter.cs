@@ -127,7 +127,6 @@ namespace KillCounters
 
         public void AddKill(BasicCharacterObject strikerTroop, BasicCharacterObject attackedTroop)
         {
-            if (strikerTroop == null || attackedTroop == null) return;
             var id = strikerTroop.StringId;
             if (!_counters.ContainsKey(id))
             {
@@ -154,7 +153,7 @@ namespace KillCounters
     {
         static void Postfix(CharacterObject strikerTroop, CharacterObject attackedTroop, bool isFinishingStrike)
         {
-            if (!isFinishingStrike) return;
+            if (!isFinishingStrike || strikerTroop == null || attackedTroop == null) return;
 
             var counters = Campaign.Current.GetCampaignBehavior<KillCountersBehavior>();
 
@@ -170,7 +169,7 @@ namespace KillCounters
             if (Campaign.Current != null)
             {
                 var counters = Campaign.Current.GetCampaignBehavior<KillCountersBehavior>();
-                if (counters != null)
+                if (counters != null && affectorAgent != null && affectedAgent != null)
                     counters.AddKill(affectorAgent.Character, affectedAgent.Character);
             }
         }
