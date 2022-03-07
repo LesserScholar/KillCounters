@@ -167,10 +167,11 @@ namespace KillCounters
     {
         static void Postfix(Agent affectedAgent, Agent affectorAgent)
         {
-            if (affectorAgent != null)
+            if (Campaign.Current != null)
             {
                 var counters = Campaign.Current.GetCampaignBehavior<KillCountersBehavior>();
-                counters.AddKill(affectorAgent.Character, affectedAgent.Character);
+                if (counters != null)
+                    counters.AddKill(affectorAgent.Character, affectedAgent.Character);
             }
         }
     }
