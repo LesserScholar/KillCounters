@@ -1,5 +1,5 @@
 <DummyRoot>
-    <ListPanel Id="KillsContainer" HeightSizePolicy ="CoverChildren" WidthSizePolicy="CoverChildren" StackLayout.LayoutMethod = "VerticalBottomToTop" DoNotAcceptEvents="true" VerticalAlignment="Bottom" MarginBottom="40" MarginLeft="15">
+    <ListPanel Id="KillsContainer" HeightSizePolicy ="CoverChildren" WidthSizePolicy="CoverChildren" StackLayout.LayoutMethod = "VerticalBottomToTop" DoNotAcceptEvents="true" VerticalAlignment="Bottom" MarginBottom="90" MarginLeft="15">
         <Children>
             <TextWidget WidthSizePolicy="CoverChildren" HeightSizePolicy="CoverChildren" Brush="Encyclopedia.SubPage.Header.Text" Text="@KillsText" MarginLeft="10"/>
 
